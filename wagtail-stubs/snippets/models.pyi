@@ -1,0 +1,9 @@
+from typing import Any
+from wagtail.admin.checks import check_panels_in_model as check_panels_in_model
+from wagtail.admin.models import get_object_usage as get_object_usage
+
+SNIPPET_MODELS: Any
+
+def get_snippet_models(): ...
+def register_snippet(model: Any): ...
+def get_snippet_usage_url(self): ...

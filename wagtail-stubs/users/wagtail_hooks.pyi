@@ -1,0 +1,33 @@
+from typing import Any
+from wagtail.admin.menu import MenuItem as MenuItem
+from wagtail.admin.search import SearchArea as SearchArea
+from wagtail.core import hooks as hooks
+from wagtail.core.compat import AUTH_USER_APP_LABEL as AUTH_USER_APP_LABEL, AUTH_USER_MODEL_NAME as AUTH_USER_MODEL_NAME
+from wagtail.users.urls import users as users
+from wagtail.users.utils import user_can_delete_user as user_can_delete_user
+from wagtail.users.views.groups import GroupViewSet as GroupViewSet
+from wagtail.users.widgets import UserListingButton as UserListingButton
+
+def register_admin_urls(): ...
+def register_viewset(): ...
+
+add_user_perm: Any
+change_user_perm: Any
+delete_user_perm: Any
+
+class UsersMenuItem(MenuItem):
+    def is_shown(self, request: Any): ...
+
+def register_users_menu_item(): ...
+
+class GroupsMenuItem(MenuItem):
+    def is_shown(self, request: Any): ...
+
+def register_groups_menu_item(): ...
+def register_permissions(): ...
+
+class UsersSearchArea(SearchArea):
+    def is_shown(self, request: Any): ...
+
+def register_users_search_area(): ...
+def user_listing_buttons(context: Any, user: Any) -> None: ...

@@ -1,0 +1,3 @@
+from typing import Any
+
+def get_custom_form(form_setting: Any): ...

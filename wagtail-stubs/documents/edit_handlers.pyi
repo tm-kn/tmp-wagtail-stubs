@@ -1,0 +1,6 @@
+from .widgets import AdminDocumentChooser as AdminDocumentChooser
+from wagtail.admin.edit_handlers import BaseChooserPanel as BaseChooserPanel
+
+class DocumentChooserPanel(BaseChooserPanel):
+    object_type_name: str = ...
+    def widget_overrides(self): ...

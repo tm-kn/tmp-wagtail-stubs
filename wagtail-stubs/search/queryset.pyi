@@ -1,0 +1,6 @@
+from typing import Any, Optional
+from wagtail.search.backends import get_search_backend as get_search_backend
+
+class SearchableQuerySetMixin:
+    def search(self, query: Any, fields: Optional[Any] = ..., operator: Optional[Any] = ..., order_by_relevance: bool = ..., partial_match: bool = ..., backend: str = ...): ...
+    def autocomplete(self, query: Any, fields: Optional[Any] = ..., operator: Optional[Any] = ..., order_by_relevance: bool = ..., backend: str = ...): ...

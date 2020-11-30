@@ -1,0 +1,13 @@
+from typing import Any
+from wagtail.admin.menu import MenuItem as MenuItem
+from wagtail.contrib.redirects import urls as urls
+from wagtail.contrib.redirects.permissions import permission_policy as permission_policy
+from wagtail.core import hooks as hooks
+
+def register_admin_urls(): ...
+
+class RedirectsMenuItem(MenuItem):
+    def is_shown(self, request: Any): ...
+
+def register_redirects_menu_item(): ...
+def register_permissions(): ...

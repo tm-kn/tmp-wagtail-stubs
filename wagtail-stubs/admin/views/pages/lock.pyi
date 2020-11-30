@@ -1,0 +1,6 @@
+from typing import Any
+from wagtail.admin import messages as messages
+from wagtail.core.models import Page as Page
+
+def lock(request: Any, page_id: Any): ...
+def unlock(request: Any, page_id: Any): ...

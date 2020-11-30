@@ -1,0 +1,6 @@
+from .utils import get_postgresql_connections as get_postgresql_connections, set_weights as set_weights
+from django.apps import AppConfig
+
+class PostgresSearchConfig(AppConfig):
+    name: str = ...
+    def ready(self): ...

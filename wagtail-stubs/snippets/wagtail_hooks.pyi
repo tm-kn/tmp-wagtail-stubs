@@ -1,0 +1,16 @@
+from typing import Any, Optional
+from wagtail.admin.menu import MenuItem as MenuItem
+from wagtail.core import hooks as hooks
+from wagtail.snippets import urls as urls
+from wagtail.snippets.models import get_snippet_models as get_snippet_models
+from wagtail.snippets.permissions import get_permission_name as get_permission_name, user_can_edit_snippet_type as user_can_edit_snippet_type, user_can_edit_snippets as user_can_edit_snippets
+from wagtail.snippets.widgets import SnippetListingButton as SnippetListingButton
+
+def register_admin_urls(): ...
+
+class SnippetsMenuItem(MenuItem):
+    def is_shown(self, request: Any): ...
+
+def register_snippets_menu_item(): ...
+def register_permissions(): ...
+def register_snippet_listing_buttons(snippet: Any, user: Any, next_url: Optional[Any] = ...) -> None: ...

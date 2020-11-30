@@ -1,0 +1,6 @@
+from typing import Any
+from wagtail.embeds import embeds as embeds
+from wagtail.embeds.exceptions import EmbedException as EmbedException
+
+def embed_to_frontend_html(url: Any): ...
+def embed_to_editor_html(url: Any): ...

@@ -1,0 +1,6 @@
+from typing import Any
+from wagtail.admin import edit_handlers as edit_handlers
+from wagtail.core.models import Page as Page
+
+def get_object_usage(obj: Any): ...
+def popular_tags_for_model(model: Any, count: int = ...): ...

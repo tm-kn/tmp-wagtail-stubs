@@ -1,0 +1,13 @@
+from .views import LocaleViewSet as LocaleViewSet
+from typing import Any
+from wagtail.admin.menu import MenuItem as MenuItem
+from wagtail.core import hooks as hooks
+from wagtail.core.permissions import site_permission_policy as site_permission_policy
+
+def register_viewset(): ...
+
+class LocalesMenuItem(MenuItem):
+    def is_shown(self, request: Any): ...
+
+def register_locales_menu_item(): ...
+def register_permissions(): ...

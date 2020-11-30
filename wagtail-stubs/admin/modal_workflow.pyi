@@ -1,0 +1,3 @@
+from typing import Any, Optional
+
+def render_modal_workflow(request: Any, html_template: Any, js_template: Optional[Any] = ..., template_vars: Optional[Any] = ..., json_data: Optional[Any] = ...): ...

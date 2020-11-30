@@ -1,0 +1,5 @@
+from typing import Any
+
+AUTH_USER_MODEL: Any
+AUTH_USER_APP_LABEL: Any
+AUTH_USER_MODEL_NAME: Any

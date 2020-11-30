@@ -1,0 +1,6 @@
+from django.forms import widgets
+from typing import Any, Optional
+
+class AdminAutoHeightTextInput(widgets.Textarea):
+    template_name: str = ...
+    def __init__(self, attrs: Optional[Any] = ...) -> None: ...

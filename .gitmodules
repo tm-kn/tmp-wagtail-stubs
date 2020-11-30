@@ -1,0 +1,3 @@
+[submodule "wagtail-source@v2.11.2"]
+	path = wagtail-source
+	url = https://github.com/wagtail/wagtail.git

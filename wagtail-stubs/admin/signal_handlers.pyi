@@ -1,0 +1,11 @@
+from typing import Any
+from wagtail.admin.mail import GroupApprovalTaskStateSubmissionEmailNotifier as GroupApprovalTaskStateSubmissionEmailNotifier, WorkflowStateApprovalEmailNotifier as WorkflowStateApprovalEmailNotifier, WorkflowStateRejectionEmailNotifier as WorkflowStateRejectionEmailNotifier, WorkflowStateSubmissionEmailNotifier as WorkflowStateSubmissionEmailNotifier
+from wagtail.core.models import TaskState as TaskState, WorkflowState as WorkflowState
+from wagtail.core.signals import task_submitted as task_submitted, workflow_approved as workflow_approved, workflow_rejected as workflow_rejected, workflow_submitted as workflow_submitted
+
+task_submission_email_notifier: Any
+workflow_submission_email_notifier: Any
+workflow_approval_email_notifier: Any
+workflow_rejection_email_notifier: Any
+
+def register_signal_handlers() -> None: ...

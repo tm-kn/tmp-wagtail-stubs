@@ -1,0 +1,9 @@
+from django.core.management.base import BaseCommand
+from typing import Any
+from wagtail.core.models import PageLogEntry as PageLogEntry, PageRevision as PageRevision
+
+def get_comparison(page: Any, revision_a: Any, revision_b: Any): ...
+
+class Command(BaseCommand):
+    def handle(self, *args: Any, **options: Any) -> None: ...
+    def log_page_action(self, action: Any, revision: Any, has_content_changes: Any) -> None: ...

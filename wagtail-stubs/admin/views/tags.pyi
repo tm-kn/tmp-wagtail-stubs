@@ -1,0 +1,3 @@
+from typing import Any, Optional
+
+def autocomplete(request: Any, app_name: Optional[Any] = ..., model_name: Optional[Any] = ...): ...

@@ -1,0 +1,3 @@
+from wagtail.core import hooks as hooks
+
+def register_admin_urls(): ...

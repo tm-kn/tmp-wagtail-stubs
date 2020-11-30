@@ -1,0 +1,3 @@
+from typing import Any
+
+def user_can_edit_setting_type(user: Any, model: Any): ...

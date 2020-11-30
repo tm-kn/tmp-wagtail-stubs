@@ -1,0 +1,3 @@
+from typing import Any
+
+def decorate_urlpatterns(urlpatterns: Any, decorator: Any): ...
